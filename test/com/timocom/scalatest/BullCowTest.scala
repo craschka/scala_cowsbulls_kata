@@ -37,6 +37,6 @@ class BullCowTest extends FlatSpec with ShouldMatchers with OneInstancePerTest {
     game.calcBulls(1234,1324) should be (2)
     game.calcBulls(1234,1238) should be (3)
     game.calcBulls(1234,1234) should be (4)
-    game.calcBulls(8431,8888)
+    game.calcBulls(8431,8888) should be (1)
   }
 }

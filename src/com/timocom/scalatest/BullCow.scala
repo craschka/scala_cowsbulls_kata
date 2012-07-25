@@ -29,8 +29,8 @@ class Game {
       return guesses
     }
     val input = Console.readInt()
-    val cows = calcCows(input, number)
-    val bulls = calcBulls(input, number)
+    val cows = calcCows(number, input )
+    val bulls = calcBulls(number, input)
     println("%d Cows and %d Bulls.".format(cows, bulls))
 
     evaluate(bulls,guesses + 1)

@@ -45,12 +45,12 @@ class Game {
   }
 
   def randomNumber(): Int = {
-    var list = "" + randomDigit + randomDigit + randomDigit + randomDigit
-    if (list.distinct.length != list.length) list = randomNumber().toString
-    list.toInt
+    var list = random;
+    if (list.toString.distinct.length != list.toString.length) list = randomNumber()
+    list
   }
 
-  def randomDigit: Int = {
-    Random.nextInt(9) + 1
+  def random: Int = {
+    Random.nextInt(9000) + 1000
   }
 }

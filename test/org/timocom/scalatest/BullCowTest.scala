@@ -3,7 +3,6 @@ package org.timocom.scalatest
 import org.scalatest.{OneInstancePerTest, FlatSpec}
 import org.scalatest.matchers.ShouldMatchers
 import org.craschka.scalatest.Game
-import com.craschka.scalatest.Game
 
 class BullCowTest extends FlatSpec with ShouldMatchers with OneInstancePerTest {
 

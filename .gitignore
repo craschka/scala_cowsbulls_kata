@@ -1,7 +1,7 @@
 #################
 ## Eclipse
 #################
-
+out
 *.pydevproject
 .project
 .metadata

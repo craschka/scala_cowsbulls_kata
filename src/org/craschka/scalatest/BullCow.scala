@@ -1,4 +1,4 @@
-package com.timocom.scalatest
+package org.craschka.scalatest
 
 import util.Random
 import collection.immutable.IndexedSeq
@@ -19,21 +19,21 @@ class Game {
     print("Guess a 4-digit number with no duplicate digits: ")
 
     val guesses = evaluate(0, 0)
-    println("You won after "+guesses+" guesses!")
-    println("number was " +number)
+    println("You won after " + guesses + " guesses!")
+    println("number was " + number)
   }
 
 
   def evaluate(_bulls: Int, guesses: Int): Int = {
-    if (_bulls==4){
+    if (_bulls == 4) {
       return guesses
     }
     val input = Console.readInt()
-    val cows = calcCows(number, input )
+    val cows = calcCows(number, input)
     val bulls = calcBulls(number, input)
     println("%d Cows and %d Bulls.".format(cows, bulls))
 
-    evaluate(bulls,guesses + 1)
+    evaluate(bulls, guesses + 1)
   }
 
   def calcBulls(input: Int, number: Int): Int = {
